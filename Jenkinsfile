@@ -15,7 +15,7 @@ pipeline {
         stage('test') {
             steps {
                 bat 'javac demo.java'
-                bat 'java demo'
+                bat 'java demo.java'
             }
         }
     }
