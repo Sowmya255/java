@@ -14,8 +14,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                bat 'javac demo.java'
-                bat 'java demo.java'
+                bat 'mvn clean test'
             }
         }
     }
